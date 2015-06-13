@@ -1,0 +1,36 @@
+
+
+body {
+	font-family: 'Droid Serif', serif;
+	font-size: 1.125em;
+	color: #666;
+}
+
+p {
+	line-height: 1.6em;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Oswald', sans-serif;
+	color: #333;
+}
+
+h1 {
+	font-size: 3.157em;
+	line-height: 1.1em;
+}
+
+h2 {
+	font-size: 2.369em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-size: 1.777em;
+	line-height: 1.3em;
+}
+
+h4 {
+	font-size: 1.333em;
+	line-height: 1.4em;
+}
