@@ -1,5 +1,3 @@
-
-
 body {
 	font-family: 'Droid Serif', serif;
 	font-size: 1.125em;
@@ -7,7 +5,7 @@ body {
 }
 
 p {
-	line-height: 1.6em;
+	line-height: 1.6rem;
 }
 
 h1, h2, h3, h4, .button {
@@ -15,7 +13,7 @@ h1, h2, h3, h4, .button {
 }
 
 h1, h2, h3, h4 {
-	color: #333;
+	color: #555;
 }
 
 h1 {
@@ -92,6 +90,11 @@ h4 {
 	margin-left: -33vw;
 }
 
+.header-headlines h1,
+.header-headlines h3 {
+	font-weight: 400;
+}
+
 .header-headlines h1 {
 	color: #fff;
 	font-size: 10vw;
@@ -106,9 +109,66 @@ h4 {
 	letter-spacing: 3px;
 }
 
+.options {
+	position: relative;
+	margin-top: -4px;
+}
 
+.options-img {
+	background-image: url("images/banners/spencerisbig-1920x800px.jpg");
+}
 
+.options-content {
+	position: relative;
+	padding: 100px 60px;
+}
 
+.testimonials {
+	position: relative;
+}
+
+.testimonials-img {
+	background-image: url("images/banners/gym-woman-abs-sportswear1.jpg");
+}
+
+.testimonials-content {
+	position: relative;
+	padding: 100px 60px;
+}
+
+.testimonials-content h1 {
+	width: 377px;
+	margin: 0 auto;
+	color: #cfcfcf;
+	
+}
+
+.testimonials-content h2 {
+	color: #f1f1f1;
+}
+
+.testimonials-content p {
+	color: #cfcfcf;
+}
+
+.testimonials-content-left,
+.testimonials-content-right {
+	max-width: 35rem;
+	display: inline-table;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
+
+.testimonials-content-left {
+	margin-right: 20px;
+}
+
+.testimonials-content-right {
+
+}
 
 
 
