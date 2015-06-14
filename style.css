@@ -10,8 +10,11 @@ p {
 	line-height: 1.6em;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .button {
 	font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4 {
 	color: #333;
 }
 
@@ -34,3 +37,110 @@ h4 {
 	font-size: 1.333em;
 	line-height: 1.4em;
 }
+
+/*====== BUTTONS ======*/
+.button {
+	border: 2px solid;
+	border-radius: 4px;
+	padding: 1.3vw 2vw;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+}
+
+.button-blue {
+	background: -webkit-linear-gradient(top, #0054D0, #1717AD);
+	background: -o-linear-gradient(top, #0054D0, #1717AD);
+	background: -moz-linear-gradient(top, #0054D0, #1717AD);
+	background: linear-gradient(top, #0054D0, #1717AD);
+	color: #FFFFFF;
+	border: #1717AD;
+}
+
+.button-blue:hover {
+	background: #1717AD;
+}
+
+.hero-image img {
+	max-width: 100%;
+}
+
+.menu-icon {
+	position: absolute;
+	top: 1.3vw;
+	right: 1.3vw;
+}
+
+.menu-icon img {
+	max-height: 9vw;
+}
+
+.header-button {
+	position: absolute;
+	top: 40vw;
+	left: 50%;
+	margin-left: -9.2vw;
+	font-size: 2.5vw;
+}
+
+.header-headlines {
+	position: absolute;
+	top: 16vw;
+	text-align: center;
+	left: 50%;
+	margin-left: -33vw;
+}
+
+.header-headlines h1 {
+	color: #fff;
+	font-size: 10vw;
+	margin: 0;
+	letter-spacing: 5px;
+}
+
+.header-headlines h3 {
+	color: #FFD700;
+	font-size: 3.5vw;
+	margin: 0;
+	letter-spacing: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
