@@ -4,7 +4,7 @@ body {
 	color: #666;
 }
 
-p {
+p, li {
 	line-height: 1.6rem;
 }
 
@@ -112,6 +112,7 @@ h4 {
 .options {
 	position: relative;
 	margin-top: -4px;
+	min-height: 980px;
 }
 
 .options-img {
@@ -120,7 +121,44 @@ h4 {
 
 .options-content {
 	position: relative;
-	padding: 100px 60px;
+	padding: 90px 0px;
+	width: 60vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.options-content h1,
+.options-content h3,
+.options-content h4 {
+	text-align: center;
+}
+
+.options-content h1 {
+	margin-bottom: 0;
+}
+
+.options-content h4 {
+	margin-top: 5px;
+	color: #888;
+}
+
+.options-content ul {
+	background-color: rgba(255, 204, 0, 0.1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	margin: 40px 0px 60px 0px;
+	border: 1px solid #ffab00;
+	border-radius: 5px;
+}
+
+.options-content li {
+	color: #444;
+}
+
+.options-content-button {
+	text-align: center;
+	margin-top: -60px;
 }
 
 .testimonials {
