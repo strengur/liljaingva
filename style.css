@@ -60,6 +60,16 @@ h4 {
 	background: #1717AD;
 }
 
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.logo img {
+	max-width: 32vw;
+}
+
 .hero-image img {
 	max-width: 100%;
 }
@@ -76,7 +86,7 @@ h4 {
 
 .header-button {
 	position: absolute;
-	top: 40vw;
+	top: 48vw;
 	left: 50%;
 	margin-left: -9.2vw;
 	font-size: 2.5vw;
@@ -84,7 +94,7 @@ h4 {
 
 .header-headlines {
 	position: absolute;
-	top: 16vw;
+	top: 24vw;
 	text-align: center;
 	left: 50%;
 	margin-left: -33vw;
@@ -116,7 +126,7 @@ h4 {
 }
 
 .options-img {
-	background-image: url("images/banners/spencerisbig-1920x800px.jpg");
+	background-image: url("images/banners/spencerisbig-1920x1280px.jpg");
 }
 
 .options-content {
@@ -143,6 +153,7 @@ h4 {
 }
 
 .options-content ul {
+	list-style-type: none;
 	background-color: rgba(255, 204, 0, 0.1);
 	padding-top: 20px;
 	padding-bottom: 20px;
@@ -158,7 +169,7 @@ h4 {
 
 .options-content-button {
 	text-align: center;
-	margin-top: -60px;
+	margin-top: -40px;
 }
 
 .testimonials {
@@ -175,10 +186,10 @@ h4 {
 }
 
 .testimonials-content h1 {
-	width: 377px;
-	margin: 0 auto;
+	width: 300px;
+	text-align: center;
+	margin: 0 auto 90px;
 	color: #cfcfcf;
-	
 }
 
 .testimonials-content h2 {
