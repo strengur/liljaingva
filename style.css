@@ -4,8 +4,8 @@ body {
 	color: #666;
 }
 
-p, li {
-	line-height: 1.6rem;
+p {
+	line-height: 1.7rem;
 }
 
 h1, h2, h3, h4, .button {
@@ -34,6 +34,10 @@ h3 {
 h4 {
 	font-size: 1.333em;
 	line-height: 1.4em;
+}
+
+li {
+	line-height: 1.8em;
 }
 
 /*====== BUTTONS ======*/
@@ -182,7 +186,8 @@ h4 {
 
 .testimonials-content {
 	position: relative;
-	padding: 100px 60px;
+	padding: 100px 0;
+	margin: 0 2%;
 }
 
 .testimonials-content h1 {
@@ -213,10 +218,34 @@ h4 {
 
 .testimonials-content-left {
 	margin-right: 20px;
+	margin-bottom: 40px;
 }
 
 .testimonials-content-right {
+	float: right;
+}
 
+.image-and-name {
+	display: flex;
+}
+
+.image-and-name h2 {
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 1192px) {
+	.testimonials-content {
+		width: 580px;
+		margin: 0 auto;
+	}
+	
+	.testimonials-content-left {
+		margin-right: 0;
+	}
+	
+	.testimonials-content-right {
+		float: none;
+	}
 }
 
 
