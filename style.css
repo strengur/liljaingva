@@ -126,7 +126,7 @@ li {
 .options {
 	position: relative;
 	margin-top: -4px;
-	min-height: 980px;
+	min-height: 990px;
 }
 
 .options-img {
@@ -136,7 +136,7 @@ li {
 .options-content {
 	position: relative;
 	padding: 90px 0px;
-	width: 60vw;
+	width: 36em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -233,9 +233,19 @@ li {
 	margin-left: 20px;
 }
 
+@media screen and (max-width: 740px) {
+	body {
+		font-size: 1em;
+	}
+	
+	.options {
+		min-height: 945px;
+	}
+}
+
 @media screen and (max-width: 1192px) {
 	.testimonials-content {
-		width: 580px;
+		width: 563px;
 		margin: 0 auto;
 	}
 	
