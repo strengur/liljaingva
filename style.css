@@ -14,6 +14,7 @@ h1, h2, h3, h4, .button {
 
 h1, h2, h3, h4 {
 	color: #555;
+	text-transform: uppercase;
 }
 
 h1 {
@@ -124,16 +125,21 @@ li {
 }
 
 .options {
+	min-height: 990px;
+}
+
+.options,
+.about {
 	position: relative;
 	margin-top: -4px;
-	min-height: 990px;
 }
 
 .options-img {
 	background-image: url("images/banners/spencerisbig-1920x1280px.jpg");
 }
 
-.options-content {
+.options-content,
+.about {
 	position: relative;
 	padding: 90px 0px;
 	width: 36em;
@@ -199,6 +205,7 @@ li {
 
 .testimonials-content h2 {
 	color: #f1f1f1;
+	font-size: 2em;
 }
 
 .testimonials-content p {
@@ -231,6 +238,39 @@ li {
 
 .image-and-name h2 {
 	margin-left: 20px;
+	margin-top: 42px;
+}
+
+.image-and-name img {
+	width: 95px;
+	height: 95px;
+	margin-top: 12px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+}
+
+.about hr {
+	margin-bottom: 90px;
+}
+
+.about h1 {
+	text-align: center;
+}
+
+.about-button {
+	text-align: center;
+	margin-top: 70px;
+}
+
+footer {
+	position: relative;
+	float: left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background: #222;
+	color: #f9f9f9; /* #FFD700 */
+	width: 100%;
+	text-align: center;
 }
 
 @media screen and (max-width: 740px) {
