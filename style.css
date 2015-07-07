@@ -17,6 +17,10 @@ h1, h2, h3, h4 {
 	text-transform: uppercase;
 }
 
+h2, h3, h4 {
+	letter-spacing: 1px;
+}
+
 h1 {
 	font-size: 3.157em;
 	line-height: 1.1em;
@@ -64,6 +68,20 @@ li {
 .button-blue:hover {
 	background: #1717AD;
 }
+
+.button-yellow {
+	background: -webkit-linear-gradient(top, #FFEE90, #FFD700);
+	background: -o-linear-gradient(top, #FFEE90, #FFD700);
+	background: -moz-linear-gradient(top, #FFEE90, #FFD700);
+	background: linear-gradient(top, #FFEE90, #FFD700);
+	color: #6f6f6f;
+	border: #FFD700;
+}
+
+.button-yellow:hover {
+	background: #FFD700;
+}
+
 
 .logo {
 	position: absolute;
@@ -192,8 +210,8 @@ li {
 
 .testimonials-content {
 	position: relative;
-	padding: 100px 0;
-	margin: 0 2%;
+	padding: 100px 0 70px;
+	margin: 0 6%;
 }
 
 .testimonials-content h1 {
@@ -249,6 +267,11 @@ li {
 	border-radius: 50%;
 }
 
+.testimonials-read-more-button {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
 .about hr {
 	margin-bottom: 90px;
 }
@@ -283,7 +306,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1192px) {
+@media screen and (max-width: 1299px) {
 	.testimonials-content {
 		width: 563px;
 		margin: 0 auto;
