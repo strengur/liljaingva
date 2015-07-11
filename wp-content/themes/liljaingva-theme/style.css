@@ -1,0 +1,451 @@
+/*
+Theme Name: Webpage for liljaingva.com
+Theme URI: http://localhost/liljaingva/
+Description: A custom WordPress website for liljaingva.com
+Author: Steingrimur
+Author URI: http://740.is
+Version: 1.0
+Tags: clean, light, responsive
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+*/
+
+body {
+	font-family: 'Droid Serif', serif;
+	font-size: 1.125em;
+	color: #666;
+}
+
+.wrapper {
+	position: relative;
+}
+
+p {
+	line-height: 1.7rem;
+}
+
+h1, h2, h3, h4, .button {
+	font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	color: #555;
+	text-transform: uppercase;
+}
+
+h2, h3, h4 {
+	letter-spacing: 1px;
+}
+
+h1 {
+	font-size: 3.157em;
+	line-height: 1.1em;
+}
+
+h2 {
+	font-size: 2.369em;
+	line-height: 1.2em;
+}
+
+h3 {
+	font-size: 1.777em;
+	line-height: 1.3em;
+}
+
+h4 {
+	font-size: 1.333em;
+	line-height: 1.4em;
+}
+
+li {
+	line-height: 1.8em;
+}
+
+/*====== BUTTONS ======*/
+.button {
+	border: 2px solid;
+	border-radius: 4px;
+	padding: 1.3vw 2vw;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	letter-spacing: 1.5px;
+}
+
+.button-blue {
+	background: -webkit-linear-gradient(top, #0054D0, #1717AD);
+	background: -o-linear-gradient(top, #0054D0, #1717AD);
+	background: -moz-linear-gradient(top, #0054D0, #1717AD);
+	background: linear-gradient(top, #0054D0, #1717AD);
+	color: #FFFFFF;
+	border: #1717AD;
+}
+
+.button-blue:hover {
+	background: #1717AD;
+}
+
+.button-yellow {
+	background: -webkit-linear-gradient(top, #FFEE90, #FFD700);
+	background: -o-linear-gradient(top, #FFEE90, #FFD700);
+	background: -moz-linear-gradient(top, #FFEE90, #FFD700);
+	background: linear-gradient(top, #FFEE90, #FFD700);
+	color: #6f6f6f;
+	border: #FFD700;
+}
+
+.button-yellow:hover {
+	background: #FFD700;
+}
+
+
+.logo {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.logo img {
+	max-width: 32vw;
+}
+
+.hero-image img {
+	max-width: 100%;
+}
+
+.menu-icon {
+	position: absolute;
+	top: 1.3vw;
+	right: 1.3vw;
+}
+
+.menu-icon img {
+	max-height: 9vw;
+}
+
+.menu-icon>#close {
+	display: none;
+}
+
+.main-menu {
+	position: absolute;
+	text-align: right;
+	width: 100%;
+	height: 100%;
+	right: -25%;
+	padding-right: 5%;
+	z-index: -100;
+}
+
+.main-menu ul {
+	list-style: none;
+	margin-left: -10px;
+	margin-right: 20px;
+}
+
+.header-button {
+	position: absolute;
+	top: 48vw;
+	left: 50%;
+	margin-left: -9.2vw;
+	font-size: 2.5vw;
+}
+
+.header-headlines {
+	position: absolute;
+	top: 24vw;
+	text-align: center;
+	left: 50%;
+	margin-left: -33vw;
+}
+
+.header-headlines h1,
+.header-headlines h3 {
+	font-weight: 400;
+}
+
+.header-headlines h1 {
+	color: #fff;
+	font-size: 10vw;
+	margin: 0;
+	letter-spacing: 5px;
+}
+
+.header-headlines h3 {
+	color: #FFD700;
+	font-size: 3.5vw;
+	margin: 0;
+	letter-spacing: 3px;
+}
+
+.options {
+	min-height: 990px;
+}
+
+.options,
+.about {
+	position: relative;
+	margin-top: -4px;
+}
+
+.options-img {
+	background-image: url("images/banners/spencerisbig-1920x1280px.jpg");
+}
+
+.options-content,
+.about-content {
+	position: relative;
+	padding: 90px 0px;
+	width: 30em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.options-content h1,
+.options-content h3,
+.options-content h4 {
+	text-align: center;
+}
+
+.options-content h1 {
+	margin-bottom: 0;
+}
+
+.options-content h4 {
+	margin-top: 5px;
+	color: #888;
+}
+
+.options-content ul {
+	list-style-type: none;
+	background-color: rgba(255, 204, 0, 0.1);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+	margin: 40px 0px 60px 0px;
+	border: 1px solid #ffab00;
+	border-radius: 5px;
+}
+
+.options-content li {
+	color: #444;
+}
+
+.options-content-button {
+	text-align: center;
+	margin-top: -40px;
+	padding-bottom: 80px;
+}
+
+.testimonials {
+	position: relative;
+}
+
+.testimonials-img {
+	background-image: url("images/banners/gym-woman-abs-sportswear1.jpg");
+}
+
+.testimonials-content {
+	position: relative;
+	padding: 100px 0 70px;
+	margin: 0 6%;
+}
+
+.testimonials-content h1 {
+	width: 300px;
+	text-align: center;
+	margin: 0 auto 90px;
+	color: #cfcfcf;
+}
+
+.testimonials-content h2 {
+	color: #f1f1f1;
+	font-size: 2em;
+}
+
+.testimonials-content p {
+	color: #cfcfcf;
+}
+
+.testimonials-content-left,
+.testimonials-content-right {
+	max-width: 35rem;
+	display: inline-table;
+	border: 1px solid #cfcfcf;
+	border-radius: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+}
+
+.testimonials-content-left {
+	margin-right: 20px;
+	margin-bottom: 40px;
+}
+
+.testimonials-content-right {
+	float: right;
+}
+
+.image-and-name {
+	display: flex;
+}
+
+.image-and-name h2 {
+	margin-left: 20px;
+	margin-top: 42px;
+}
+
+.image-and-name img {
+	width: 95px;
+	height: 95px;
+	margin-top: 12px;
+	border: 4px solid #fff;
+	border-radius: 50%;
+}
+
+.testimonials-read-more-button {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.options hr,
+.about hr {
+	margin-bottom: 70px;
+}
+
+.about {
+	background: #fff;
+}
+
+.about h1 {
+	text-align: center;
+}
+
+.about-button {
+	text-align: center;
+	margin-top: 70px;
+}
+
+footer {
+	position: relative;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 100%;
+	text-align: center;
+}
+
+footer,
+.main-menu {
+	background: #222;
+	color: #f9f9f9;
+}
+
+@media screen and (max-width: 1299px) {
+	.testimonials-content {
+		width: 563px;
+		margin: 0 auto;
+	}
+	
+	.testimonials-content-left {
+		margin-right: 0;
+	}
+	
+	.testimonials-content-right {
+		float: none;
+	}
+}
+
+@media screen and (max-width: 740px) {	
+	.button {
+		padding: 2.5vw 3vw;
+	}
+	
+	.options {
+		min-height: 945px;
+	}
+	
+	.header-button {
+		top: 50vw;
+		margin-left: -12.9vw;
+		font-size: 3.5vw;
+	}
+	
+	.testimonials-content-left,
+	.testimonials-content-right {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	.options-content,
+	.about-content {
+		width: 78vw;
+	}
+	
+	.options-content h1,
+	.testimonials-content h1,
+	.about h1 {
+		font-size: 8vw;
+	}
+	
+	.testimonials-content {
+		width: 91vw;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	.image-and-name {
+		display: block;
+		text-align: center;
+	}
+	
+	.testimonials p {
+	}
+	
+	.image-and-name h2 {
+		margin-top: 10px;
+		margin-left: 0;
+		font-size: 6.7vw
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
