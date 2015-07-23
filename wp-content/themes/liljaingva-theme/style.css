@@ -122,7 +122,7 @@ li {
 }
 
 .menu-icon img {
-	max-height: 9vw;
+	max-height: 7vw;
 }
 
 .menu-icon>#close {
@@ -130,6 +130,7 @@ li {
 }
 
 .main-menu {
+	display: none;
 	position: absolute;
 	text-align: right;
 	width: 100%;
@@ -198,7 +199,7 @@ li {
 .about-content {
 	position: relative;
 	padding: 90px 0px;
-	width: 30em;
+	width: 38em;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -223,7 +224,7 @@ li {
 	background-color: rgba(255, 204, 0, 0.1);
 	padding-top: 20px;
 	padding-bottom: 20px;
-	padding-left: 50px;
+	padding-left: 30px;
 	margin: 40px 0px 60px 0px;
 	border: 1px solid #ffab00;
 	border-radius: 5px;
@@ -363,6 +364,10 @@ footer,
 		padding: 2.5vw 3vw;
 	}
 	
+	.menu-icon img {
+		max-height: 45px;
+	}
+	
 	.options {
 		min-height: 945px;
 	}
@@ -378,9 +383,11 @@ footer,
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+/*
 }
 
 @media screen and (max-width: 620px) {
+*/
 	.options-content,
 	.about-content {
 		width: 78vw;
@@ -400,7 +407,7 @@ footer,
 @media screen and (max-width: 568px) {
 	p,
 	li {
-		font-size: 2vw;
+		font-size: 3.2vw;
 	}
 	.image-and-name {
 		display: block;

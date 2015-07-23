@@ -1,4 +1,5 @@
 $("#open").click(function() {
+	$(".main-menu").fadeIn();
 	$(".wrapper").animate({
 		left: "-25%"
 	});
@@ -12,4 +13,5 @@ $("#close").click(function() {
 	});
 	$("#close").css("display", "none");
 	$("#open").fadeIn(1400);
+	$(".main-menu").fadeOut();
 });
