@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 
 
-			<section class="testimonials testimonials-img">
+			<section class="testimonials testimonials-listing-page-background">
 				
 				<div class="posts-names">
 					<h1><?php the_title(); ?></h1>

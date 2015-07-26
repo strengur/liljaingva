@@ -1,5 +1,5 @@
 			<footer>
-				<p><center>&copy; 2015 - <?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari. - Allur réttur áskilinn</center></p>
+				<p><center>&copy;2015 - <?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari. - Allur réttur áskilinn</center></p>
 				<a class="made-by" href="http://740.is"><center>740.is</center></a>
 			</footer>
 

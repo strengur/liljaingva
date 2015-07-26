@@ -80,7 +80,7 @@
 							echo '</h2></a>';
 							echo '</div>';
 							echo '<p>';
-								the_excerpt_max_charlength(310);
+								the_excerpt_max_charlength(210);
 							echo '</p>';
 							
 						}
@@ -132,7 +132,7 @@
 							echo '</h2></a>';
 							echo '</div>';
 							echo '<p>';
-								the_excerpt_max_charlength(310);
+								the_excerpt_max_charlength(210);
 							echo '</p>';
 							
 						}
@@ -158,7 +158,11 @@
 			</section>
 			
 			<section class="about">
-				<div class="about-content">
+				<div class="about-content-center">
+					<div class="about-content-img">
+					<img src="<?php bloginfo('template_directory'); ?>/images/lilja-ingva.png">
+					</div>
+					<div class="about-content">
 
 
 					<?php $query = new WP_Query( 'p=23' );
@@ -179,10 +183,12 @@
 		
 						endif;
 					?>
-
-					<div class="about-button">
+<div class="about-button">
 						<a href="<?php the_permalink(); ?>" class="button button-blue">Lesa meira</a>
 					</div>
+					
+					</div>
+					
 				</div>
 			</section>
 			

@@ -197,17 +197,12 @@ li {
 	background-image: url("images/banners/spencerisbig-1920x1280px.jpg");
 }
 
-.options-content,
-.about-content {
+.options-content {
 	position: relative;
 	padding: 90px 0px;
 	width: 38em;
 	margin-left: auto;
 	margin-right: auto;
-}
-
-.about-content a{
-	text-decoration: none;
 }
 
 .options-content h1,
@@ -348,17 +343,44 @@ li {
 	margin-bottom: 70px;
 }
 
+.about,
+.about-content {
+	background: #e0e0e0;
+}
+
 .about {
-	background: #fff;
+	padding-bottom: 90px;
 }
 
 .about h1 {
 	text-align: center;
 }
 
+.about-content-center {
+	text-align: center;
+}
+
+.about-content {
+	position: relative;
+	display: inline-block;
+	padding: 90px 0px 60px;
+	width: 29em;
+}
+
+.about-content a{
+	text-decoration: none;
+}
+
+.about-content-img {
+	position: relative;
+	display: inline-table;
+	margin-right: 200px;
+	border: 2px solid #4cf;
+}
+
 .about-button {
 	text-align: center;
-	margin-top: 70px;
+	margin-top: 30px;
 }
 
 .posts-names {
@@ -388,8 +410,13 @@ li {
 .testimonials-listing-page {
 	width: 95vw;
 	margin: 0 auto;
-	padding-top: 300px;
-	padding-bottom: 100px;
+	padding-top: 240px;
+	padding-bottom: 150px;
+}
+
+.testimonials-listing-page-background {
+	background-image: url("images/banners/vector-damask-floral-pattern.jpg");
+
 }
 
 footer {
@@ -398,6 +425,7 @@ footer {
 	padding-bottom: 30px;
 	width: 100%;
 	text-align: center;
+	letter-spacing: 1px;
 }
 
 footer,
