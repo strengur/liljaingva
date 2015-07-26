@@ -103,8 +103,9 @@ li {
 
 .logo {
 	position: absolute;
-	top: 10px;
+	top: 20px;
 	left: 10px;
+	z-index: 1000;
 }
 
 .logo img {
@@ -117,8 +118,9 @@ li {
 
 .menu-icon {
 	position: absolute;
-	top: 1.3vw;
-	right: 1.3vw;
+	top: 1.7vw;
+	right: 1.7vw;
+	z-index: 1000;
 }
 
 .menu-icon img {
@@ -246,6 +248,11 @@ li {
 
 .testimonials {
 	position: relative;
+	width: 100%;
+}
+
+.testimonials ul {
+	list-style-type: none;
 }
 
 .testimonials-img {
@@ -265,7 +272,8 @@ li {
 	color: #cfcfcf;
 }
 
-.testimonials-content h2 {
+.testimonials-content h2,
+.image-and-name h2 {
 	color: #f1f1f1;
 	font-size: 2em;
 }
@@ -275,10 +283,11 @@ li {
 }
 
 .testimonials-content-left,
-.testimonials-content-right {
+.testimonials-content-right,
+.testimonials-listings li {
 	max-width: 35rem;
 	display: inline-table;
-	border: 1px solid #cfcfcf;
+	border: 2px solid #cfcfcf;
 	border-radius: 5px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -350,6 +359,37 @@ li {
 .about-button {
 	text-align: center;
 	margin-top: 70px;
+}
+
+.posts-names {
+	position: relative;
+	top: 92px;
+	width: 400px;
+	margin: auto;
+	text-align: center;
+}
+
+.posts-names h1 {
+	color: #cfcfcf;
+	margin-top: 0;
+}
+
+.testimonials-listings ul {
+	padding-left: 0px;
+	max-width: 1140px;
+	margin: auto;
+}
+
+.testimonials-listings li {
+	margin: 5px 5px;
+	color: #cfcfcf;
+}
+
+.testimonials-listing-page {
+	width: 95vw;
+	margin: 0 auto;
+	padding-top: 300px;
+	padding-bottom: 100px;
 }
 
 footer {
