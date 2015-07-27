@@ -160,7 +160,7 @@
 			<section class="about">
 				<div class="about-content-center">
 					<div class="about-content-img">
-					<img src="<?php bloginfo('template_directory'); ?>/images/lilja-ingva.png">
+					<a href="<?php the_permalink(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/lilja-ingva.png"></a>
 					</div>
 					<div class="about-content">
 
@@ -169,11 +169,11 @@
 					
 						if ( have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
 
-						echo '<center><a href="';
+						echo '<a href="';
 						the_permalink();
 						echo '"><h1>';
 							the_title() ;
-						echo '</h1></a></center>';
+						echo '</h1></a>';
 						echo '<p>';
 							the_excerpt();
 						echo '</p>';
