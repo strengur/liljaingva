@@ -22,7 +22,7 @@
 
 			
 			<div class="logo">
-				<img src="<?php bloginfo('template_directory');?>/images/lilja-ingva-logo.svg">
+				<a href="<?php home_url(); ?>"><img src="<?php bloginfo('template_directory');?>/images/lilja-ingva-logo.svg"></a>
 			</div>
 			
 			<div class="menu-icon">

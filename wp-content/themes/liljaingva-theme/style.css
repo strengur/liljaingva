@@ -109,7 +109,7 @@ li {
 }
 
 .logo img {
-	max-width: 32vw;
+	max-width: 395px;
 }
 
 .hero-image img {
@@ -344,7 +344,8 @@ li {
 }
 
 .about,
-.about-content {
+.about-content,
+.single-page {
 	background: #e0e0e0;
 }
 
@@ -391,9 +392,10 @@ li {
 .posts-names {
 	position: relative;
 	top: 92px;
-	width: 400px;
-	margin: auto;
-	text-align: center;
+	width: 100%;
+	left: 46%;
+	text-align: left;
+
 }
 
 .posts-names h1 {
@@ -422,6 +424,25 @@ li {
 .testimonials-listing-page-background {
 	background-image: url("images/banners/vector-damask-floral-pattern.jpg");
 
+}
+
+.single-page {
+	position: relative;
+}
+
+.single-page-content {
+	width: 615px;
+	margin: 0 auto;
+	padding-top: 210px;
+	padding-bottom: 150px;
+}
+
+.single-page-top-banner {
+	position: absolute;
+	height: 250px;
+	width: 100%;
+	background: #222;
+	box-shadow: 0px 5px 15px #777;
 }
 
 footer {
@@ -455,6 +476,9 @@ footer,
 }
 
 @media screen and (max-width: 983px) {
+	.logo img {
+		max-width: 40.3vw;
+	}
 	.about-content {
 		display: block;
 		padding: 30px 0 30px;
@@ -471,6 +495,19 @@ footer,
 	
 	.about-content-center {
 		width: 593px;
+	}
+	
+	.posts-names {
+		top: 9.7vw;
+		right: 15vw;
+	}
+	
+	.posts-names h1 {
+		font-size: 5.7vw;
+	}
+	
+	.single-page-top-banner {
+		height: 25.4vw;
 	}
 }
 
@@ -525,6 +562,14 @@ footer,
 	.about-content-img img {
 		width: 28vw;
 	}
+	
+	.posts-names {
+		top: 10.2vw;
+	}
+	
+	.single-page-top-banner {
+		height: 200px;
+	}
 }
 
 @media screen and (max-width: 568px) {
@@ -542,11 +587,27 @@ footer,
 		margin-left: 0;
 		font-size: 6.7vw
 	}
+	
+	.posts-names {
+		top: 11.3vw;
+	}
+	
+	.single-page-top-banner {
+		height: 170px;
+	}
 }
 
 @media screen and (max-width: 498px) {
 	h4 {
 		font-size: 4.5vw;
+	}
+	
+	.posts-names {
+		top: 11.8vw;
+	}
+	
+	.single-page-top-banner {
+		height: 130px;
 	}
 }
 
@@ -560,7 +621,21 @@ footer,
 	text-decoration: underline;
 }
 
+/* ==============
+	WP Stylesheet overwrit
+===============*/
 
+img.alignleft {
+	float: left;
+	margin: 7px 25px 0px -50px;
+	box-shadow: 3px 3px 5px #777;
+}
+
+img.alignright {
+	float: right;
+	margin: 7px -50px 0px 25px;
+	box-shadow: 3px 3px 5px #777;
+}
 
 
 
