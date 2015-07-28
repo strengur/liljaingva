@@ -54,25 +54,22 @@
 					$argsUmsagnir = array('category_name' => 'umsagnir', 'posts_per_page' => 1, 'offset' => 0);
 					$query = new WP_Query( $argsUmsagnir );
 					
-					$secondPhoto = array( 'post_type' => 'attachment', 'posts_per_page' => 1, 'offset' => 0, 'post_status' =>'any' ); 
-					$secondAttachments = get_posts( $secondPhoto );
-
-					if ( $secondAttachments ) {
-						foreach ( $secondAttachments as $secondAttachment ) {
-							
-							echo '<div class="image-and-name">';
-							the_attachment_link( $secondAttachment->ID , true);
-							
-							}
-					} else {
-						echo "Því miður vantar mynd með þessari færslu.";
-					}
-
 					if ( $query->have_posts() ) {
 						while ( $query->have_posts() ) {
 							$query->the_post();
 							
+							$secondPhoto = array( 'post_type' => 'attachment', 'posts_per_page' => -1, 'post_status' =>'any', 'post_parent' => $post->ID ); 
+					$secondAttachments = get_posts( $secondPhoto );
+
+							if ( $secondAttachments ) {
+						foreach ( $secondAttachments as $secondAttachment ) {
 							
+							echo '<div class="image-and-name">';
+							the_attachment_link( $secondAttachment->ID , true);							
+							}
+					} else {
+						echo "Því miður vantar mynd með þessari færslu.";
+					}
 							echo '<a href="';
 								the_permalink();
 							echo '"><h2>';
@@ -82,7 +79,6 @@
 							echo '<p>';
 								the_excerpt_max_charlength(210);
 							echo '</p>';
-							
 						}
 						
 						echo '<a href="';
@@ -105,25 +101,23 @@
 					
 					$argsUmsagnir = array('category_name' => 'umsagnir', 'posts_per_page' => 1, 'offset' => 1);
 					$query = new WP_Query( $argsUmsagnir );
-					
-					$secondPhoto = array( 'post_type' => 'attachment', 'posts_per_page' => 1, 'offset' => 1, 'post_status' =>'any' ); 
-					$secondAttachments = get_posts( $secondPhoto );
-
-					if ( $secondAttachments ) {
-						foreach ( $secondAttachments as $secondAttachment ) {
-							
-							echo '<div class="image-and-name">';
-							the_attachment_link( $secondAttachment->ID , true);
-							
-							}
-					} else {
-						echo "Því miður vantar mynd með þessari færslu.";
-					}
 
 					if ( $query->have_posts() ) {
 						while ( $query->have_posts() ) {
 							$query->the_post();
 							
+							$secondPhoto = array( 'post_type' => 'attachment', 'posts_per_page' => -1, 'post_status' =>'any', 'post_parent' => $post->ID ); 
+					$secondAttachments = get_posts( $secondPhoto );
+
+							if ( $secondAttachments ) {
+						foreach ( $secondAttachments as $secondAttachment ) {
+							
+							echo '<div class="image-and-name">';
+							the_attachment_link( $secondAttachment->ID , true);							
+							}
+					} else {
+						echo "Því miður vantar mynd með þessari færslu.";
+					}
 							
 							echo '<a href="';
 								the_permalink();

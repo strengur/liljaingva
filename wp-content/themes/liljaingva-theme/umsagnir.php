@@ -4,13 +4,11 @@
 <?php wp_head(); ?>
 <?php get_header(); ?>
 
-
 			<section class="testimonials testimonials-listing-page-background">
 				
 				<div class="posts-names">
 					<h1><?php the_title(); ?></h1>
 				</div>
-				
 
 				<?php
 					
@@ -61,8 +59,6 @@
 							
 							
 						}
-						
-						
 
 					} else {
 						echo "Því miður finnst engin grein til að birta";
@@ -73,7 +69,6 @@
 					echo '</ul>';
 					echo '</div>';
 						echo '</div>';
-					
 				?>
 
 			</section>
