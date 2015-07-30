@@ -1,3 +1,8 @@
+<?php
+ 	/*
+ 		Template Name: Umsögn
+ 	*/
+ ?>
 <?php get_header(); ?>
 
 <div class="single-post">
@@ -10,19 +15,19 @@
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-			<?php the_content(); ?>
+		<?php the_content(); ?>
 			
-			<div class="posts-nav">
+		<div class="posts-nav">
 			<div class="posts-nav-previous-link">
 				
 				<img src="<?php bloginfo('template_directory'); ?>/images/icons/left-arrow-yellow.png">
 				<?php previous_post_link('%link', 'Fyrri umsögn', TRUE); ?>
 			</div>
-			<div class="posts-nav-next-link">
+		<div class="posts-nav-next-link">
 				<?php next_post_link('%link', 'Næsta umsögn', TRUE); ?>
-				<img src="<?php bloginfo('template_directory'); ?>/images/icons/right-arrow-yellow.png">
-			</div>
+			<img src="<?php bloginfo('template_directory'); ?>/images/icons/right-arrow-yellow.png">
 		</div>
+	</div>
 
 			<?php
 /*
@@ -41,7 +46,11 @@
 		<?php endif; ?>
 		
 	</div>
-
+	
+	<div class="testimonials-read-more-button">
+					<a href="<?php bloginfo('url'); ?>/umsagnir" class="button button-yellow">Til baka í umsagnir</a>
+	</div>
+	
 </div>
 
 

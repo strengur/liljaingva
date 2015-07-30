@@ -14,10 +14,14 @@
 			
 			<div class="main-menu">
 					<ul>
-						<li>Menu Item 1</li>
-						<li>Menu Item 2</li>
-						<li>Menu Item 3</li>
+						<li><a href="<?php bloginfo('url'); ?>">Heim</a></li>
+						<li><a href="<?php bloginfo('url'); ?>">Verðskrá</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/umsagnir">Umsagnir</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/ferdalagid-mitt">Ferðalagið mitt</li>
+						<li><a href="<?php bloginfo('url'); ?>">Bloggið</li>
+						<li><a href="<?php bloginfo('url'); ?>">Hafa samband</li>
 					</ul>
+					
 				</div>
 
 			

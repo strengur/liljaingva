@@ -20,13 +20,14 @@ body {
 
 .wrapper {
 	position: relative;
+	z-index: 1;
 }
 
 p {
 	line-height: 1.7rem;
 }
 
-h1, h2, h3, h4, .button {
+h1, h2, h3, h4, .button, .main-menu {
 	font-family: 'Oswald', sans-serif;
 }
 
@@ -92,7 +93,7 @@ li {
 	background: -o-linear-gradient(top, #FFEE90, #FFD700);
 	background: -moz-linear-gradient(top, #FFEE90, #FFD700);
 	background: linear-gradient(top, #FFEE90, #FFD700);
-	color: #6f6f6f;
+	color: #3f3f3f;
 	border: #FFD700;
 }
 
@@ -135,17 +136,40 @@ li {
 	display: none;
 	position: absolute;
 	text-align: right;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
 	width: 100%;
 	height: 100%;
 	right: -25%;
-	padding-right: 5%;
-	z-index: -100;
+	z-index: -1;
 }
 
 .main-menu ul {
 	list-style: none;
-	margin-left: -10px;
 	margin-right: 20px;
+}
+
+.main-menu li {
+	width: 100%;
+	padding: 7px 20px 7px 0px;
+}
+
+.main-menu li:hover {
+	background: -webkit-linear-gradient(top, #FFEE90, #FFD700);
+	background: -o-linear-gradient(top, #FFEE90, #FFD700);
+	background: -moz-linear-gradient(top, #FFEE90, #FFD700);
+	background: linear-gradient(top, #FFEE90, #FFD700);
+	color: #6f6f6f;
+	border: #FFD700;}
+
+.main-menu ul:last-child {
+		border-bottom: 1px dotted #cfcfcf;
+
+}
+
+.main-menu a {
+	text-decoration: none;
+	color: #cfcfcf;
 }
 
 .header-button {
@@ -319,7 +343,7 @@ li {
 	width: 95px;
 	height: 95px;
 	margin-top: 12px;
-	border: 4px solid #FFD700;
+	border: 4px solid #ffd700;
 	border-radius: 50%;
 }
 
@@ -380,7 +404,7 @@ li {
 }
 
 .about-content-img img {
-	border: 4px solid #1717AD;
+	border: 4px solid #ffd700;
 	border-radius: 50%;
 }
 
@@ -399,6 +423,11 @@ li {
 .posts-names h1 {
 	color: #cfcfcf;
 	margin-top: 0;
+}
+
+.testimonials-listings {
+	width: 570px;
+	margin: auto;
 }
 
 .testimonials-listings ul {
@@ -600,13 +629,14 @@ footer,
 	
 	.single-post-content {
 		padding-top: 310px;
+		width: 75.6vw;
 	}
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (max-width: 599px) {
 	p,
 	li {
-		font-size: 3.2vw;
+		font-size: 3vw;
 	}
 	.image-and-name {
 		display: block;
@@ -625,6 +655,16 @@ footer,
 	
 	.single-post-top-banner {
 		height: 170px;
+	}
+	
+	.single-post-content>img {
+		width: 25vw;
+		height: 25vw;
+	}
+	
+	.testimonials-listings {
+		width: auto;
+		margin: auto;
 	}
 }
 

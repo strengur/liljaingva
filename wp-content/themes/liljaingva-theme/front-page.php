@@ -13,7 +13,7 @@
 				</div>
 				
 				<div class="header-button">
-					<a class="button button-blue" href="#arangur">Smelltu hér</a>
+					<a class="button button-yellow" href="#arangur">Smelltu hér</a>
 				</div>
 			</section>
 			
@@ -40,7 +40,7 @@
 				</div>
 				
 				<div class="options-content-button">
-					<a class="button button-blue" href="#">Pantaðu tíma!</a>
+					<a class="button button-yellow" href="#">Pantaðu tíma!</a>
 				</div>
 			</section>
 			
@@ -153,16 +153,26 @@
 			
 			<section class="about">
 				<div class="about-content-center">
+<!--
 					<div class="about-content-img">
 					<a href="<?php the_permalink(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/lilja-ingva.png"></a>
 					</div>
 					<div class="about-content">
+-->
 
 
 					<?php $query = new WP_Query( 'p=23' );
 					
 						if ( have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
-
+						
+						echo '<div class="about-content-img"><a href="';
+							the_permalink();
+						echo '"><img src="';
+							bloginfo('template_directory');
+						echo '/images/lilja-ingva.png"></a></div><div class="about-content">';
+						
+						
+						
 						echo '<a href="';
 						the_permalink();
 						echo '"><h1>';
@@ -178,7 +188,7 @@
 						endif;
 					?>
 <div class="about-button">
-						<a href="<?php the_permalink(); ?>" class="button button-blue">Lesa meira</a>
+						<a href="<?php the_permalink(); ?>" class="button button-yellow">Lesa meira</a>
 					</div>
 					
 					</div>
