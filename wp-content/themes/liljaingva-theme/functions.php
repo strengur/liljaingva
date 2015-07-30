@@ -1,6 +1,6 @@
 <?php
 function theme_styles() {
-	wp_enqueue_style('googleDroid-Serif','http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic');
+	wp_enqueue_style('googleRaleway','http://fonts.googleapis.com/css?family=Raleway:200,400,600');
 
 	wp_enqueue_style('googleOswald','http://fonts.googleapis.com/css?family=Oswald:400,700');
 

@@ -46,7 +46,7 @@
 								the_title();
 							echo '</h2></a></div>';
 							echo '<p>';
-								the_excerpt_max_charlength(210);
+								the_excerpt_max_charlength(200);
 							echo '</p>';
 							
 							echo '<a href="';

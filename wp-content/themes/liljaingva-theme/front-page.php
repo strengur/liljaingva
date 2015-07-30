@@ -77,7 +77,7 @@
 							echo '</h2></a>';
 							echo '</div>';
 							echo '<p>';
-								the_excerpt_max_charlength(210);
+								the_excerpt_max_charlength(200);
 							echo '</p>';
 						}
 						
@@ -126,7 +126,7 @@
 							echo '</h2></a>';
 							echo '</div>';
 							echo '<p>';
-								the_excerpt_max_charlength(210);
+								the_excerpt_max_charlength(200);
 							echo '</p>';
 							
 						}
