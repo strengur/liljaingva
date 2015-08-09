@@ -17,16 +17,16 @@
 						<li><a href="<?php bloginfo('url'); ?>">Heim</a></li>
 						<li><a href="<?php bloginfo('url'); ?>">Verðskrá</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/umsagnir">Umsagnir</a></li>
-						<li><a href="<?php bloginfo('url'); ?>/ferdalagid-mitt">Ferðalagið mitt</li>
+						<li><a href="<?php bloginfo('url'); ?>/ferdalagid-mitt">Ferðalagið mitt</a></li>
 						<li><a href="<?php bloginfo('url'); ?>">Bloggið</li>
-						<li><a href="<?php bloginfo('url'); ?>">Hafa samband</li>
+						<li><a href="<?php bloginfo('url'); ?>/hafa-samband">Hafa samband</a></li>
 					</ul>
 					
 				</div>
 
 			
 			<div class="logo">
-				<a href="<?php home_url(); ?>"><img src="<?php bloginfo('template_directory');?>/images/lilja-ingva-logo.svg"></a>
+				<a href="<?php bloginfo('url'); ?>"><img src="<?php bloginfo('template_directory');?>/images/lilja-ingva-logo.svg"></a>
 			</div>
 			
 			<div class="menu-icon">

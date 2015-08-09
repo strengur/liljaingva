@@ -39,8 +39,14 @@
 					
 				</div>
 				
+<!--
 				<div class="options-content-button">
-					<a class="button button-yellow" href="#">Pantaðu tíma!</a>
+					<div class="button button-yellow"><a href="<?php bloginfo('url'); ?>/hafa-samband">Panta tíma!</a></div>
+				</div>
+-->
+				
+				<div class="option-order-button">
+					<a href="<?php bloginfo('url'); ?>/hafa-samband" class="button button-yellow">Panta tíma!</a>
 				</div>
 			</section>
 			
