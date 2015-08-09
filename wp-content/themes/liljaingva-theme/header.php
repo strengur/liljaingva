@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+		<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 		<meta charset="utf-8">
 		<?php wp_head(); ?>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 			<div class="main-menu">
 					<ul>
 						<li><a href="<?php bloginfo('url'); ?>">Heim</a></li>
-						<li><a href="<?php bloginfo('url'); ?>">Verðskrá</a></li>
+						<li><a href="<?php bloginfo('url'); ?>/verdskra">Verðskrá</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/umsagnir">Umsagnir</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/ferdalagid-mitt">Ferðalagið mitt</a></li>
 						<li><a href="<?php bloginfo('url'); ?>">Bloggið</li>

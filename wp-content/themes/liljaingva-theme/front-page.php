@@ -119,9 +119,11 @@
 						foreach ( $secondAttachments as $secondAttachment ) {
 							
 							echo '<div class="image-and-name">';
-							the_attachment_link( $secondAttachment->ID , true);							
+							the_attachment_link( $secondAttachment->ID , true);						
 							}
+							
 					} else {
+						
 						echo "Því miður vantar mynd með þessari færslu.";
 					}
 							
@@ -175,28 +177,35 @@
 							the_permalink();
 						echo '"><img src="';
 							bloginfo('template_directory');
-						echo '/images/lilja-ingva.png"></a></div><div class="about-content">';
+						echo '/images/lilja-ingva.jpg"></a></div>';
 						
+						echo '<div class="about-content">';
 						
-						
-						echo '<a href="';
-						the_permalink();
-						echo '"><h1>';
-							the_title() ;
-						echo '</h1></a>';
-						echo '<p>';
-							the_excerpt();
-						echo '</p>';
+							echo '<a href="';
+							the_permalink();
+							echo '"><h1>';
+								the_title() ;
+							echo '</h1></a>';
+							echo '<p>';
+								the_excerpt();
+							echo '</p>';
+
+
+							echo '<div class="about-button">';
+								echo '<a href="';
+									the_permalink();
+								echo '" class="button button-yellow">Lesa meira</a>';
+							echo '</div>';
+
+
+						echo '</div>';
 						endwhile; else:
 		
 						echo '<p>Engar færslur til að birta á þessari síðu.</p>';
 		
 						endif;
 					?>
-<div class="about-button">
-						<a href="<?php the_permalink(); ?>" class="button button-yellow">Lesa meira</a>
-					</div>
-					
+
 					</div>
 					
 				</div>
