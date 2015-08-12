@@ -8,12 +8,12 @@
 <div class="single-post">
 	<div class="single-post-top-banner">
 	</div>
-	<div class="posts-names">
-					<h1><?php the_title(); ?></h1>
-				</div>
-	<div class="single-post-content" style="width: 100%;">
+		<div class="posts-names">
+			<h1><?php the_title(); ?></h1>
+		</div>
+	<div class="price-lists">
 
-		<div style="display: inline-block; width: 59%; padding-left: 30px; position: relative; top: -128px;">
+		<div class="price-list-left">
 			<?php
 
 				
@@ -35,7 +35,7 @@
 			?>
 		</div>
 		
-		<div style="background: #fff5cc; color: #d6ad00; display: inline-block; width: 36%; padding-left: 22px; position: relative;">
+		<div class="price-list-right">
 			<?php
 
 				
@@ -56,7 +56,28 @@
 				wp_reset_postdata();
 			?>
 		</div>
-		<p><strong>Samningur er gerður fyrir alla þjálfun og greiðist hver mánuður fyrirfram</strong></p>
+		<div class="price-list-bottom">
+			<?php
+
+				
+				$the_query = new WP_Query( 'p=87' );
+	
+				
+				if ( $the_query->have_posts() ) {
+					
+					while ( $the_query->have_posts() ) {
+						$the_query->the_post();
+						echo '<h2>' . get_the_title() . '</h2>';
+					}
+					echo the_content();
+				} else {
+					echo 'Því miður fannst ekkert til að birta';
+				}
+				
+				wp_reset_postdata();
+			?>
+		</div>
+
 	</div>
 
 	

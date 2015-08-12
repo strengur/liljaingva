@@ -25,7 +25,7 @@ body {
 	z-index: 1;
 }
 
-p {
+p, td {
 	line-height: 1.8rem;
 }
 
@@ -350,6 +350,7 @@ li {
 	margin-top: 12px;
 	border: 4px solid #ffd700;
 	box-shadow: 0px 0px 10px #ffd700;
+	-webkit-box-shadow: 0px 0px 10px #ffd700;
 	border-radius: 50%;
 }
 
@@ -361,6 +362,7 @@ li {
 
 .testimonials-read-more-single:hover {
 	box-shadow: 0px 0px 20px #ffd700;
+	-webkit-box-shadow: 0px 0px 20px #ffd700;
 }
 
 .option-order-button,
@@ -414,6 +416,7 @@ li {
 .about-content-img img {
 	border: 4px solid #ffd700;
 	box-shadow: 0px 0px 40px #ffd700;
+	-webkit-box-shadow: 0px 0px 40px #ffd700;
 	border-radius: 50%;
 }
 
@@ -427,6 +430,7 @@ li {
 	top: 92px;
 	margin-left: 46%;
 	text-align: left;
+	z-index: 2;
 }
 
 .posts-names h1 {
@@ -479,6 +483,8 @@ li {
 	width: 100%;
 	background: #222;
 	box-shadow: 0px 5px 15px #777;
+	-webkit-box-shadow: 0px 5px 15px #777;
+	z-index: 1;
 }
 
 .posts-nav {
@@ -504,6 +510,48 @@ li {
 
 .posts-nav-next-link {
 	float: right;
+}
+
+.price-lists {
+	width: 100%;
+	margin: auto;
+	padding-top: 250px;
+	padding-bottom: 0;
+}
+
+.price-list-left {
+	position: relative;
+	display: inline-table;
+/* 	width: 30em; */
+	padding-left: 30px;
+}
+
+.price-list-right {
+	position: absolute;
+	display: inline-table;
+	right:	0;
+	background: #f9f3dc;
+	color: #7d5f00;
+	width: 25em;
+/* 	padding-left: 30px; */
+}
+
+.price-list-left,
+.price-list-right {
+	padding-top: 40px;
+	padding-bottom 60px;
+}
+
+.price-list-bottom {
+	position: relative;
+	background: #bfbfbf;
+	color: #484848;
+	padding: 100px 30px 150px;
+}
+
+.price-list-bottom td {
+/* 	padding-left: 20px; */
+	padding-right: 40px;
 }
 
 footer {
@@ -580,6 +628,11 @@ footer,
 	.single-post-content {
 		padding-top: 40vw;
 	}
+	
+	.price-list-right {
+		position: relative;
+		width: 100%;
+	}
 }
 
 @media screen and (max-width: 740px) {	
@@ -650,11 +703,12 @@ footer,
 		padding-top: 310px;
 		width: 75.6vw;
 	}
+	
 }
 
 @media screen and (max-width: 599px) {
 	p,
-	li {
+	li, td {
 		font-size: 3vw;
 	}
 	.image-and-name {
@@ -719,12 +773,14 @@ img.alignleft {
 	float: left;
 	margin: 7px 25px 0px -50px;
 	box-shadow: 3px 3px 5px #777;
+	-webkit-box-shadow: 3px 3px 5px #777;
 }
 
 img.alignright {
 	float: right;
 	margin: 7px -50px 0px 25px;
 	box-shadow: 3px 3px 5px #777;
+	-webkit-box-shadow: 3px 3px 5px #777;
 }
 
 /* ========================
