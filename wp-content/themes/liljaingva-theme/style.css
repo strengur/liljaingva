@@ -79,7 +79,7 @@ li {
 }
 
 .button-blue {
-	background: -webkit-linear-gradient(top, #0054D0, #1717AD);
+	background-color: -webkit-linear-gradient(top, #0054D0, #1717AD);
 	background: -o-linear-gradient(top, #0054D0, #1717AD);
 	background: -moz-linear-gradient(top, #0054D0, #1717AD);
 	background: linear-gradient(top, #0054D0, #1717AD);
@@ -473,7 +473,7 @@ li {
 .single-post-content {
 	width: 615px;
 	margin: 0 auto;
-	padding-top: 380px;
+	padding-top: 330px;
 	padding-bottom: 150px;
 }
 
@@ -527,19 +527,20 @@ li {
 }
 
 .price-list-right {
-	position: absolute;
+/* 	position: absolute; */
+	float: right;
 	display: inline-table;
-	right:	0;
+/* 	right:	0; */
 	background: #f9f3dc;
 	color: #7d5f00;
 	width: 25em;
-/* 	padding-left: 30px; */
+	padding-left: 30px;
 }
 
 .price-list-left,
 .price-list-right {
 	padding-top: 40px;
-	padding-bottom 60px;
+	padding-bottom: 40px;
 }
 
 .price-list-bottom {
@@ -626,11 +627,12 @@ footer,
 	}
 	
 	.single-post-content {
-		padding-top: 40vw;
+		padding-top: 290px;
 	}
 	
 	.price-list-right {
 		position: relative;
+		float: none;
 		width: 100%;
 	}
 }
@@ -655,7 +657,7 @@ footer,
 	}
 	
 	.main-menu a {
-		font-size: 1.6em;
+		font-size: 1.3em;
 	}
 	
 	.testimonials-content-left,
@@ -700,7 +702,7 @@ footer,
 	}
 	
 	.single-post-content {
-		padding-top: 310px;
+		padding-top: 240px;
 		width: 75.6vw;
 	}
 	
@@ -709,7 +711,13 @@ footer,
 @media screen and (max-width: 599px) {
 	p,
 	li, td {
-		font-size: 3vw;
+		font-size: .85rem;
+		line-height: 1.6rem;
+	}
+	
+	h2 {
+		font-size: 1.7em;
+		line-height: 1em;
 	}
 	.image-and-name {
 		display: block;
@@ -730,6 +738,10 @@ footer,
 		height: 170px;
 	}
 	
+	.single-post-content {
+		padding-top: 210px;
+	}
+	
 	.single-post-content>img {
 		width: 25vw;
 		height: 25vw;
@@ -739,19 +751,39 @@ footer,
 		width: auto;
 		margin: auto;
 	}
+	
+	.testimonials-listing-page {
+		padding-top: 200px;
+	}
+	
+	.price-lists {
+		padding-top: 160px;
+	}
 }
 
 @media screen and (max-width: 498px) {
 	h4 {
-		font-size: 4.5vw;
+		font-size: 1.1em;
 	}
 	
 	.posts-names {
-		top: 11.8vw;
+		top: 60px;
 	}
 	
 	.single-post-top-banner {
 		height: 130px;
+	}
+	
+	.single-post-content {
+		padding-top: 170px;
+	}
+	
+	.testimonials-listing-page {
+		padding-top: 150px;
+	}
+	
+	.price-lists {
+		padding-top: 110px;
 	}
 }
 
