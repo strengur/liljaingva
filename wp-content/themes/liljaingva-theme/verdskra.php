@@ -36,25 +36,27 @@
 		</div>
 		
 		<div class="price-list-right">
-			<?php
-
-				
-				$the_query = new WP_Query( 'p=78' );
+			<div class="price-list-right-fix">
+				<?php
 	
-				
-				if ( $the_query->have_posts() ) {
 					
-					while ( $the_query->have_posts() ) {
-						$the_query->the_post();
-						echo '<h2>' . get_the_title() . '</h2>';
+					$the_query = new WP_Query( 'p=78' );
+		
+					
+					if ( $the_query->have_posts() ) {
+						
+						while ( $the_query->have_posts() ) {
+							$the_query->the_post();
+							echo '<h2>' . get_the_title() . '</h2>';
+						}
+						echo the_content();
+					} else {
+						echo 'Því miður fannst ekkert til að birta';
 					}
-					echo the_content();
-				} else {
-					echo 'Því miður fannst ekkert til að birta';
-				}
-				
-				wp_reset_postdata();
-			?>
+					
+					wp_reset_postdata();
+				?>
+			</div>
 		</div>
 		<div class="price-list-bottom">
 			<?php

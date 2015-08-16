@@ -470,7 +470,8 @@ li {
 	position: relative;
 }
 
-.single-post-content {
+.single-post-content,
+.contact-form {
 	width: 615px;
 	margin: 0 auto;
 	padding-top: 330px;
@@ -555,6 +556,63 @@ li {
 	padding-right: 40px;
 }
 
+/* ==============
+	WP Stylesheet overwrit
+===============*/
+
+img.alignleft {
+	float: left;
+	margin: 7px 25px 0px -50px;
+	box-shadow: 3px 3px 5px #777;
+	-webkit-box-shadow: 3px 3px 5px #777;
+}
+
+img.alignright {
+	float: right;
+	margin: 7px -50px 0px 25px;
+	box-shadow: 3px 3px 5px #777;
+	-webkit-box-shadow: 3px 3px 5px #777;
+}
+
+/* ========================
+	Contact form overwrite. Buttons styled in button area above.
+========================= */
+
+#wpcf7-f57-p58-o1 {
+	padding: 20px 0px;
+	border: 2px solid #FFD700;
+	border-radius: 7px;
+}
+
+.wpcf7-text {
+	height: 35px;
+	border-radius: 5px;
+}
+
+.wpcf7-form input,
+.wpcf7-form textarea {
+	color: #444;
+	padding-left: 10px;
+	border: 0px;
+}
+
+span.wpcf7-not-valid-tip,
+.screen-reader-response li {
+	color: #f00;
+	font-size: 0.8em;
+}
+
+.wpcf7-submit {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+form.wpcf7-form {
+	width: 390px;
+	margin: auto;
+}
+
+
 footer {
 	position: relative;
 	padding-top: 30px;
@@ -626,7 +684,8 @@ footer,
 		height: 25.4vw;
 	}
 	
-	.single-post-content {
+	.single-post-content,
+	.contact-form {
 		padding-top: 290px;
 	}
 	
@@ -634,6 +693,11 @@ footer,
 		position: relative;
 		float: none;
 		width: 100%;
+		padding-left: 0;
+	}
+	
+	.price-list-right-fix {
+		padding-left: 30px;
 	}
 }
 
@@ -706,6 +770,15 @@ footer,
 		width: 75.6vw;
 	}
 	
+	.contact-form {
+		width: auto;
+	}
+	
+	#wpcf7-f57-p58-o1 {
+		width: 430px;
+		margin: 0 auto;
+	}
+	
 }
 
 @media screen and (max-width: 599px) {
@@ -738,7 +811,8 @@ footer,
 		height: 170px;
 	}
 	
-	.single-post-content {
+	.single-post-content,
+	.contact-form {
 		padding-top: 210px;
 	}
 	
@@ -759,6 +833,14 @@ footer,
 	.price-lists {
 		padding-top: 160px;
 	}
+	
+	#wpcf7-f57-p58-o1 {
+		width: 350px;
+		padding: 20px 0px 0px 20px;
+	
+	form.wpcf7-form {
+		width: 310px;
+	}
 }
 
 @media screen and (max-width: 498px) {
@@ -774,7 +856,8 @@ footer,
 		height: 130px;
 	}
 	
-	.single-post-content {
+	.single-post-content,
+	.contact-form {
 		padding-top: 170px;
 	}
 	
@@ -784,6 +867,32 @@ footer,
 	
 	.price-lists {
 		padding-top: 110px;
+	}
+	
+	#wpcf7-f57-p58-o1 {
+		width: 350px;
+/* 		padding: 20px 0px 0px 15px; */
+	}
+	
+	form.wpcf7-form {
+		width: 310px;
+		margin: auto;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	
+	#wpcf7-f57-p58-o1 {
+		width: 270px;
+		/* padding: 20px 0px 0px 15px; */
+	}
+	
+	.wpcf7-form input, .wpcf7-form textarea {
+		width: 240px;
+	}
+	
+	form.wpcf7-form {
+		width: auto;
 	}
 }
 
@@ -796,59 +905,6 @@ footer,
 .made-by:hover {
 	text-decoration: underline;
 }
-
-/* ==============
-	WP Stylesheet overwrit
-===============*/
-
-img.alignleft {
-	float: left;
-	margin: 7px 25px 0px -50px;
-	box-shadow: 3px 3px 5px #777;
-	-webkit-box-shadow: 3px 3px 5px #777;
-}
-
-img.alignright {
-	float: right;
-	margin: 7px -50px 0px 25px;
-	box-shadow: 3px 3px 5px #777;
-	-webkit-box-shadow: 3px 3px 5px #777;
-}
-
-/* ========================
-	Contact form overwrite. Buttons styled in button area above.
-========================= */
-
-#wpcf7-f57-p58-o1 {
-	padding: 20px 0px 10px 40px;
-	border: 2px solid #FFD700;
-	border-radius: 7px;
-}
-
-.wpcf7-text {
-	height: 35px;
-	border-radius: 5px;
-}
-
-.wpcf7-form input,
-.wpcf7-form textarea {
-	color: #444;
-	padding-left: 10px;
-	border: 0px;
-
-}
-
-span.wpcf7-not-valid-tip,
-.screen-reader-response li {
-	color: #f00;
-	font-size: 0.8em;
-}
-
-.wpcf7-submit {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
 
 
 

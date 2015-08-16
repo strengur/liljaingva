@@ -11,7 +11,7 @@
 	<div class="posts-names">
 					<h1><?php the_title(); ?></h1>
 				</div>
-	<div class="single-post-content">
+	<div class="contact-form">
 
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
