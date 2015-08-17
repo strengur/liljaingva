@@ -19,7 +19,8 @@
 						<li><a href="<?php bloginfo('url'); ?>/verdskra">Verðskrá</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/umsagnir">Umsagnir</a></li>
 						<li><a href="<?php bloginfo('url'); ?>/ferdalagid-mitt">Ferðalagið mitt</a></li>
-						<li><a href="<?php bloginfo('url'); ?>">Bloggið</li>
+						<li><a href="<?php bloginfo('url'); ?>/greinar">Greinar</li>
+						<li><a href="<?php bloginfo('url'); ?>/lilja-ingva-blog">Bloggið</li>
 						<li><a href="<?php bloginfo('url'); ?>/hafa-samband">Hafa samband</a></li>
 					</ul>
 					
