@@ -1,4 +1,5 @@
 			<footer>
+				<?php wp_nav_menu( array('menu' => 'Footer Additional')); ?>
 				<p><center>&copy;2015 - <?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari<br>Er staðsett í Sporthúsinu Kópavogi<br>Allur réttur áskilinn</center></p>
 				<a class="made-by" href="http://740.is"><center>740.is</center></a>
 			</footer>
