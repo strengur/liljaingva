@@ -1,7 +1,33 @@
 			<footer>
-				<?php wp_nav_menu( array('menu' => 'Footer Additional')); ?>
-				<p><center>&copy;2015 - <?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari<br>Er staðsett í Sporthúsinu Kópavogi<br>Allur réttur áskilinn</center></p>
-				<a class="made-by" href="http://740.is"><center>740.is</center></a>
+				<div class="footer-sections-clearfix">
+					<div class="footer-menu-clearfix">
+						<div class="footer-menu-items">
+							<?php wp_nav_menu( array('menu' => 'Footer Additional')); ?>
+						</div>
+					</div>
+					
+					<div class="footer-company-info-clearfix">
+						<div class="footer-company-info">
+							<p>Ég er staðsett í Sporthúsinu<br>
+								Dalsmári 9-11, Kópavogur</p>
+							<p>Vertu með mér á samfélagsmiðlunum</p>
+							<div class="footer-social-share">
+								<a href="https://www.facebook.com/liljaingva/timeline"><img src="<?php bloginfo('template_directory');?>/images/icons/facebook.png"></a>
+								<a href="https://instagram.com/liljaingva/"><img src="<?php bloginfo('template_directory');?>/images/icons/instagram.png"></a>
+								<a href="https://twitter.com/liljaingva"><img src="<?php bloginfo('template_directory');?>/images/icons/twitter.png"></a>
+								<img src="<?php bloginfo('template_directory');?>/images/icons/location.png">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="footer-year">
+					<p>&copy;2015 - <?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari | Allur réttur áskilinn</p>
+				</div>
+				
+				<div class="made-by">
+					<a href="http://740.is">740.is</a>
+				</div>
 			</footer>
 
 		</div>
