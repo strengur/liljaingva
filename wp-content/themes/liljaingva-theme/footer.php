@@ -22,7 +22,8 @@
 				</div>
 				
 				<div class="footer-year">
-					<p>&copy;2015 - <?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari | Allur réttur áskilinn</p>
+					
+					<p>&copy;<?php echo date( 'Y' ); ?> Lilja Ingva | ÍAK Einkaþjálfari | Allur&nbsp;réttur&nbsp;áskilinn</p>
 				</div>
 				
 				<div class="made-by">
