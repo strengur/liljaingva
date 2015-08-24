@@ -638,6 +638,7 @@ footer,
 .footer-menu-clearfix {
 	padding: 38px 0 30px 0;
 	text-align: right;
+	border-right: 1px solid #ffd700;
 }
 
 .footer-menu-items {
@@ -654,7 +655,7 @@ footer,
 }
 
 .footer-menu-items a {
-	color: #f4f4f4;
+	color: #bfbfbf;
 	text-decoration: none;
 }
 
@@ -665,7 +666,6 @@ footer,
 .footer-company-info-clearfix {
 	text-align: left;
 	padding: 40px 0;
-	border-left: 1px solid #ffd700;
 }
 
 .footer-company-info {
@@ -847,12 +847,15 @@ footer,
 		text-align: center;
 	}
 	
+	.footer-menu-clearfix {
+		border-right: none;
+	}
+	
 	.footer-menu-items li {
 		line-height: 2.3em;
 	}
 	
 	.footer-company-info-clearfix {
-		border-left: none;
 		border-top: 1px solid #ffd700;
 	}
 
