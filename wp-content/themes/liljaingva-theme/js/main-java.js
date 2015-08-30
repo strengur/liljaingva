@@ -1,7 +1,7 @@
 $("#open").click(function() {
 	$(".main-menu").fadeIn();
 	$(".wrapper").animate({
-		left: "-50vw"
+		left: "-250px"
 	});
 	$("#open").css("display", "none");
 	$("#close").fadeIn(1400);

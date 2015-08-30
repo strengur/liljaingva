@@ -8,15 +8,19 @@
 <div class="single-post">
 	<div class="single-post-top-banner">
 	</div>
+	
+	<?php $blogPosts = new WP_Query( 'category_name=blog'); ?>
+	
 	<div class="posts-names">
-					<h1><?php the_title(); ?></h1>
-				</div>
-	<div class="contact-form">
+		<h1><?php the_title(); ?></h1>
+	</div>
+	
+	<div class="single-post-content">
 
-		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<?php if ( $blogPosts->have_posts() ) : while ( $blogPosts->have_posts() ) : $blogPosts->the_post(); ?>
 
 		<?php the_content(); ?>
-			
+		<?php echo '<hr>'; ?>	
 <!--
 		<div class="posts-nav">
 			<div class="posts-nav-previous-link">
@@ -32,13 +36,13 @@
 -->
 
 			<?php
-/*
+
 				if ( comments_open() ) :
 					echo '<p>';
 						comments_template();
 					echo '</p>';
 				endif;
-*/
+
 			?>
 
 		<?php endwhile; else: ?>
@@ -46,7 +50,7 @@
 			<p>Engar færslur til að birta á þessari síðu.</p>
 
 		<?php endif; ?>
-		
+
 	</div>
 	
 <!--

@@ -68,7 +68,8 @@ li {
 
 /*====== BUTTONS ======*/
 .button,
-.wpcf7-submit {
+.wpcf7-submit,
+#respond #submit {
 	border: 2px solid;
 	border-radius: 4px;
 	padding: 1.3vw 2vw;
@@ -92,7 +93,8 @@ li {
 }
 
 .button-yellow,
-.wpcf7-submit {
+.wpcf7-submit,
+#respond #submit {
 	background: -webkit-linear-gradient(top, #FFEE90, #FFD700);
 	background: -o-linear-gradient(top, #FFEE90, #FFD700);
 	background: -moz-linear-gradient(top, #FFEE90, #FFD700);
@@ -102,7 +104,8 @@ li {
 }
 
 .button-yellow:hover,
-.wpcf7-submit:hover {
+.wpcf7-submit:hover,
+#respond #submit:hover {
 	background: #FFD700;
 }
 
@@ -145,7 +148,7 @@ li {
 	letter-spacing: 0.8px;
 	width: 100%;
 	height: 100%;
-	right: -50vw;
+	right: -250px;
 	z-index: -1;
 }
 
@@ -557,7 +560,7 @@ li {
 }
 
 /* ==============
-	WP Stylesheet overwrit
+	WP Stylesheet overwrite
 ===============*/
 
 img.alignleft {
@@ -575,7 +578,7 @@ img.alignright {
 }
 
 /* ========================
-	Contact form overwrite. Buttons styled in button area above.
+	Contact form and leave a reply form overwrite. Buttons styled in button area above.
 ========================= */
 
 #wpcf7-f57-p58-o1 {
@@ -584,13 +587,24 @@ img.alignright {
 	border-radius: 7px;
 }
 
-.wpcf7-text {
+.wpcf7-text,
+#respond #author,
+#respond #email,
+#respond #url {
 	height: 35px;
 	border-radius: 5px;
 }
 
+#respond #comment {
+	border-radius: 5px;
+}
+
 .wpcf7-form input,
-.wpcf7-form textarea {
+.wpcf7-form textarea,
+#respond #author,
+#respond #email,
+#respond #url,
+#respond #comment {
 	color: #444;
 	padding-left: 10px;
 	border: 0px;
@@ -681,6 +695,13 @@ footer,
 	text-align: center;
 	padding-top: 20px;
 	font-size: 0.85em;
+}
+
+@media screen and (min-width: 1300px) {
+	.testimonials-content {
+		margin: 0 auto;
+		width: 1150px;
+	}
 }
 
 
@@ -821,7 +842,7 @@ footer,
 		height: 200px;
 	}
 	
-	.single-post-content {
+	.single-post-content, {
 		padding-top: 240px;
 		width: 75.6vw;
 	}
@@ -830,7 +851,7 @@ footer,
 		width: auto;
 	}
 	
-	#wpcf7-f57-p58-o1 {
+	#wpcf7-f57-p58-o1, {
 		width: 430px;
 		margin: 0 auto;
 	}
