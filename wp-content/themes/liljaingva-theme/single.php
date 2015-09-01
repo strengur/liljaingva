@@ -30,13 +30,13 @@
 	</div>
 
 			<?php
-/*
+
 				if ( comments_open() ) :
 					echo '<p>';
 						comments_template();
 					echo '</p>';
 				endif;
-*/
+
 			?>
 
 		<?php endwhile; else: ?>

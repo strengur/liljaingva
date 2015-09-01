@@ -466,7 +466,10 @@ li {
 
 .testimonials-listing-page-background {
 	background-image: url("images/banners/vector-damask-floral-pattern.jpg");
+}
 
+.blog-posts-background {
+	background-image: url("images/banners/liljaingva-blog-1920x1280.jpg");
 }
 
 .single-post {
@@ -842,7 +845,7 @@ footer,
 		height: 200px;
 	}
 	
-	.single-post-content, {
+	.single-post-content {
 		padding-top: 240px;
 		width: 75.6vw;
 	}
@@ -851,9 +854,18 @@ footer,
 		width: auto;
 	}
 	
-	#wpcf7-f57-p58-o1, {
+	#wpcf7-f57-p58-o1 {
 		width: 430px;
 		margin: 0 auto;
+	}
+	
+	div#respond {
+/* 		width: 550px; */
+/* 		margin: 0 auto; */
+	}
+	
+	textarea#comment {
+		max-width: 97%;
 	}
 	
 	footer {
@@ -964,6 +976,10 @@ footer,
 		padding-top: 170px;
 	}
 	
+	.single-post-content {
+		width: 73vw;
+	}
+	
 	.testimonials-listing-page {
 		padding-top: 150px;
 	}
@@ -980,6 +996,9 @@ footer,
 	form.wpcf7-form {
 		width: 310px;
 		margin: auto;
+	}
+	textarea#comment {
+		max-width: 75vw;
 	}
 }
 
