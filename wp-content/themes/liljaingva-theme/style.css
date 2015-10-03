@@ -126,7 +126,7 @@ li {
 }
 
 .menu-icon {
-	position: absolute;
+	position: fixed;
 	top: 1.7vw;
 	right: 1.7vw;
 	z-index: 1000;
@@ -155,6 +155,9 @@ li {
 .main-menu ul {
 	list-style: none;
 	margin-right: 20px;
+	position: fixed;
+	padding-top: 120px;
+	right: 0;
 }
 
 .main-menu li {
